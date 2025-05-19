@@ -1,5 +1,6 @@
 # JavaScript DOM Playground
 📌 Overview
+
 Welcome to the JavaScript DOM Playground — a fun and interactive web app that demonstrates magical spells using JavaScript DOM manipulation!
 
 ## Features
