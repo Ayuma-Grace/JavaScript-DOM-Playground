@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Playground</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+            transition: background-color 0.5s;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .content-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+        #dynamic-text {
+            font-size: 1.2em;
+            padding: 10px;
+            border-left: 3px solid #3498db;
+            background-color: #f8f9fa;
+        }
+        .hidden {
+            display: none;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JavaScript DOM Playground</h1>
+        <p>Explore the power of JavaScript and DOM manipulation</p>
+    </header>
+
+    <main>
+        <section class="content-box">
+            <h2>Dynamic Text Manipulation</h2>
+            <p id="dynamic-text">Click the buttons below to change this text!</p>
+            <button id="change-text">Change Text</button>
+            <button id="add-emoji">Add Emoji</button>
+            <button id="toggle-case">Toggle Case</button>
+        </section>
+
+        <section class="content-box">
+            <h2>Style Modification</h2>
+            <p id="style-target">Watch my style change when you click the buttons!</p>
+            <button id="change-color">Change Color</button>
+            <button id="change-size">Increase Size</button>
+            <button id="rotate-text">Rotate Text</button>
+        </section>
+
+        <section class="content-box">
+            <h2>Element Manipulation</h2>
+            <div id="element-container">
+                <p>This area will change when you interact with it.</p>
+            </div>
+            <button id="add-element">Add New Element</button>
+            <button id="remove-element">Remove Last Element</button>
+            <button id="toggle-visibility">Toggle Visibility</button>
+        </section>
+
+        <section class="content-box hidden" id="secret-section">
+            <h2>Congratulations! 🎉</h2>
+            <p>You discovered the secret section by clicking enough buttons!</p>
+            <button id="party-mode">Activate Party Mode</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created with JavaScript and DOM Manipulation</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
